@@ -55,8 +55,12 @@ console.log(module); //output a json object in console
 //defined in that file are "ONLY scoped to that module"
 
 
+// 3. ---- import modules ---- 
+const log = require('./logger');
 
-
+// logger.log('message');
+// console.log(logger);
+log('----test message');
 
 
 
