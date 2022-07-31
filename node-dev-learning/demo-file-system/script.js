@@ -3,9 +3,8 @@ const fs = require('fs'); //file system module
 //readFile method from the fs module
 
 //this method is async and it has a callback function
-fs.readFile('./hello.txt', (err, data) => {
+fs.readFile('./hell.txt', (err, data) => {
     if (err) {
-        throw err;
         console.log('errorrrrrr');
     }
     //if there wasn't an error
@@ -31,5 +30,8 @@ fs.writeFile('bye.text', 'all the best', err => {
         console.log(err);
     }
 });
+
+
+
 
 
