@@ -3,6 +3,13 @@ const express = require('express');
 
 const app = express();
 
+//express has a concept of middleware
+app.use((req, res, next) => {
+    console.log('<h1>hellooooo</h1>')
+    next(); //express keep running through the next requests
+})
+
+
 app.get('/', (req, res) => {
     // res.send("<h1>hellooo</h1");
     //sending json
