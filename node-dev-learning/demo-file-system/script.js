@@ -3,7 +3,7 @@ const fs = require('fs'); //file system module
 //readFile method from the fs module
 
 //this method is async and it has a callback function
-fs.readFile('./hell.txt', (err, data) => {
+fs.readFile('./hello.txt', (err, data) => {
     if (err) {
         console.log('errorrrrrr');
     }
@@ -30,6 +30,17 @@ fs.writeFile('bye.text', 'all the best', err => {
         console.log(err);
     }
 });
+
+// delete
+fs.unlink('./bye.txt', err => {
+    if (err) {
+        console.log(err)
+    }
+    console.log('File removed.');
+})
+
+
+
 
 
 
