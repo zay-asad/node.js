@@ -6,6 +6,7 @@ const server = http.createServer((request, response) => {
     console.log('headers', request.headers);
     console.log('methods', request.method);
     console.log('url', request.url);
+    console.log('test response from server');
 
     const user = {
         name: 'John',
