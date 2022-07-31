@@ -26,6 +26,10 @@ fs.appendFile('./hello.txt', ' This paragraph will be added in the text file', e
 
 
 // write
-
+fs.writeFile('bye.text', 'all the best', err => {
+    if (err) {
+        console.log(err);
+    }
+});
 
 
